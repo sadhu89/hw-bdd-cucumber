@@ -493,3 +493,91 @@ Started GET "/assets/application.self.css?body=1" for ::1 at 2015-07-23 13:57:16
 
 
 Started GET "/assets/application.self.js?body=1" for ::1 at 2015-07-23 13:57:16 -0700
+
+
+Started GET "/assets/rails.png" for 181.64.192.209 at 2015-11-22 15:24:47 +0000
+
+
+Started GET "/movies" for 181.64.192.209 at 2015-11-22 15:24:58 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (26.5ms)
+Completed 200 OK in 179ms (Views: 161.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 181.64.192.209 at 2015-11-22 15:24:59 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 181.64.192.209 at 2015-11-22 15:24:59 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 181.64.192.209 at 2015-11-22 15:25:01 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 181.64.192.209 at 2015-11-22 15:25:02 +0000
+
+
+Started GET "/assets/rails.png" for 181.64.192.209 at 2015-11-22 15:58:48 +0000
+
+
+Started GET "/movies" for 181.64.192.209 at 2015-11-22 15:58:58 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (24.5ms)
+Completed 200 OK in 91ms (Views: 73.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 181.64.192.209 at 2015-11-22 15:58:59 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 181.64.192.209 at 2015-11-22 15:58:59 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 181.64.192.209 at 2015-11-22 15:58:59 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 181.64.192.209 at 2015-11-22 15:58:59 +0000
+
+
+Started GET "/assets/application.self.css?body=1" for 181.64.192.209 at 2015-11-22 15:59:10 +0000
+
+
+Started GET "/movies" for 181.64.192.209 at 2015-11-22 16:23:53 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')
+  Rendered movies/index.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 181.64.192.209 at 2015-11-22 16:23:53 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 181.64.192.209 at 2015-11-22 16:23:53 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 181.64.192.209 at 2015-11-22 16:23:53 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 181.64.192.209 at 2015-11-22 16:23:53 +0000
+
+
+Started GET "/assets/rails.png" for 181.64.192.209 at 2015-11-22 23:05:48 +0000
+
+
+Started GET "/movies" for 181.64.192.209 at 2015-11-22 23:05:52 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (4.7ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (14.2ms)
+Completed 200 OK in 41ms (Views: 34.8ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 181.64.192.209 at 2015-11-22 23:05:53 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 181.64.192.209 at 2015-11-22 23:05:53 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 181.64.192.209 at 2015-11-22 23:05:53 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 181.64.192.209 at 2015-11-22 23:05:53 +0000

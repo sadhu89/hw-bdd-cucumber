@@ -23,10 +23,20 @@ Background: movies have been added to database
 
 Scenario: restrict to movies with 'PG' or 'R' ratings
   # enter step(s) to check the 'PG' and 'R' checkboxes
+  When I check the following ratings: PG, R
   # enter step(s) to uncheck all other checkboxes
+    And I uncheck the following ratings: G, PG-13, NC-17
   # enter step to "submit" the search form on the homepage
+    And I press "Refresh"
   # enter step(s) to ensure that PG and R movies are visible
+  Then I should see "PG" within "table#movies"
+    And I should see /^R$/ within "table#movies"
   # enter step(s) to ensure that other movies are not visible
-
+    And I should not see /^G$/ within "table#movies"
+    And I should not see "PG-13" within "table#movies"
+    And I should not see "PG-17" within "table#movies"
 Scenario: all ratings selected
-  # see assignment
+  When I check the following ratings: PG, R, G, PG-13, NC-17
+    And I press "Refresh"
+  Then I should see all of the movies
+  
