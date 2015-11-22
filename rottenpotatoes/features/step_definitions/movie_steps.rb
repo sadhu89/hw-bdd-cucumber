@@ -36,10 +36,7 @@ When /I (un)?check the following ratings: (.*)/ do |uncheck, rating_list|
 end
 
 Then(/^I should see all of the movies$/) do
-  page.should have_css("table#movies tr", :count=>11)
+  page.all('table#movies tr').count.should == (Movie.count + 1)
 end
 
-Then(/^I should see all movies sorted$/) do
-  puts page.body
-end
 
